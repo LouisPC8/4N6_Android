@@ -5,6 +5,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface Service {
-    @GET("https://fourn6-mobile-prof.onrender.com/exos/long/double/4")
+    @GET("https://fourn6-mobile-prof.onrender.com/exos/long/double/{nombre}")
     fun NombreDoublé(@Path("nombre") nombre : String): Call<String>
 }
