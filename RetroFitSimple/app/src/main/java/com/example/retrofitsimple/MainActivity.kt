@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
             call.enqueue(object : Callback<String>{
                 override fun onResponse(call : Call<String>, response : Response<String>){
                     if(response.isSuccessful){
+                        val text = response.body()
+                        val duration = Toast.LENGTH_LONG
+
+                         val toast = Toast.makeText(this@MainActivity,text,duration)
+                        toast.show()
+
                         binding.tv.text = response.body()
                     }
                     else{
