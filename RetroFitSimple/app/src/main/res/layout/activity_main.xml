@@ -9,9 +9,11 @@
     android:orientation="vertical">
 
     <EditText
+        android:layout_marginTop="50px"
         android:id="@+id/nombreADoubs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
         android:hint="Écrit un chiffre j'va le doubler"
         />
 
@@ -20,6 +22,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Send It"
+        android:textSize="30dp"
+        android:layout_margin="25px"
+        />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="25px"
         />
 
 
